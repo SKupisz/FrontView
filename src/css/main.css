@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.code-box{
+  width: calc(50% - 12px);
+  height: 290px;
+  float: left;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background: #ccc;
+}
+.code-boxHeader{
+  font-size: 1.2em;
+  font-family: 'Lato',sans-serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.code-boxTextarea{
+  max-width: calc(100% - 5px);
+  min-width: calc(100% - 5px);
+  max-height: 250px;
+  float: left;
+  min-height: 250px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #eee;
+}
+.show-box{
+  width: calc(100% - 2px);
+  height: 300px;
+  background: #ddd;
+  float: left;
+  border: 1px solid #eee;
+}
