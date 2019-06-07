@@ -5,11 +5,25 @@ String.prototype.replaceAll = function(search, replacement) {
 let pos1 = 0,pos2 = 0, htmlEl = "";
 let mainShowing = document.querySelector(".show-boxContent");
 function runIt(){
-  document.querySelector(".show-boxContent").innerHTML = "";
+  if(document.querySelector(".show-boxContent"))
+  {
+    document.querySelector(".show-boxContent").innerHTML = "";
   let content =  document.querySelector(".html-area").value;
   document.querySelector(".show-boxContent").innerHTML = content;
   let css = document.querySelector(".css-area").value;
   css.trim();
+  document.querySelector(".show-boxContent").classList.add(emotion.css(css));
+  }
+  else {
+    document.querySelector(".show-boxContentcss-0").innerHTML = "";
+  let content =  document.querySelector(".html-area").value;
+  document.querySelector(".show-boxContentcss-0").innerHTML = content;
+  let css = document.querySelector(".css-area").value;
+  css.trim();
+  document.querySelector(".show-boxContentcss-0").classList.add(emotion.css(css));
+  }
+
+  /*
   while(css.length > 0)
   {
     pos1 = css.indexOf("{");
@@ -73,7 +87,7 @@ function runIt(){
     css = css.substring(pos2+1,css.length);
     css.trim();
 
-  }
+  }*/
 }
 function coloringHTML(){
 
